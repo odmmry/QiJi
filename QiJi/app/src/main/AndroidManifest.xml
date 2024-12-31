@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.myapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" /> <!-- 声明后台定位权限 -->
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+
+    <application
+        android:name=".MainApp"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:resizeableActivity="false"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".activity.CompetitionRankingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.MyPostsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ChangeUserInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.RideLogActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.OrderListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.CartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.CompetitionDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.CreateCompetitionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.SubmitOrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.GoodsDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.CreateGoodsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.RideActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Ride3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Ride2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Ride1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.CreatePostActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.PostsDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.TabbarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="7f9fd2cb3b7b92874d1ff8a5d9416ef9" />
+    </application>
+
+</manifest>

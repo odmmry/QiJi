@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F7F7"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/black">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="登录"
+            android:textColor="@android:color/white"
+            android:textSize="17sp" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="108dp"
+        android:layout_height="140dp"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:rotationX="360"
+        android:text="骑迹"
+        android:textColor="#1D1919"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="今天开始加入自行车社区"
+        android:textColor="#161515"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/bg_edittext"
+        android:hint="请输入电子邮件/手机号"
+        android:maxLength="100"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:singleLine="true"
+        android:text="123456"
+        android:textColor="@color/black"
+        android:textCursorDrawable="@null"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/bg_edittext"
+        android:hint="请输入登录密码"
+        android:inputType="textPassword"
+        android:maxLength="100"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:singleLine="true"
+        android:text="123456"
+        android:textColor="@color/black"
+        android:textCursorDrawable="@null"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/bt_gradient_yellow"
+        android:gravity="center"
+        android:text="开始使用"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_horizontal"
+        android:text="还没有账号？点击注册"
+        android:textColor="#648AC8"
+        android:textSize="13sp" />
+
+</LinearLayout>
